@@ -34,8 +34,6 @@ git clone https://github.com/yourusername/audio-editing-ai.git
 cd audio-editing-ai
 2. Install required dependencies:
 pip install -r requirements.txt
-3. Create a .env file for your API keys (e.g., OpenAI API) and never commit it:
-OPENAI_API_KEY=your_api_key_here
 
 Usage
 Run the CLI with required parameters:
@@ -62,5 +60,3 @@ face_privacy.py
 chroma_key.py
 tests/ folder with example unit tests
 This will make it plug-and-play for your project.
-
-Do you want me to generate that full folder + code template next?
