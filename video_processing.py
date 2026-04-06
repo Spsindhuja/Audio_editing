@@ -8,7 +8,7 @@ from tqdm import tqdm
 import openai  # For AI subtitles
 
 # OpenAI Whisper API key (replace with your key)
-OPENAI_API_KEY = "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"
+#OPENAI_API_KEY = "
 
 def process_audio(audio_path, duration, volume=1.0, fade_in=2, fade_out=2, noise_reduction=True):
     """Process the audio: volume normalization, fade-in/out, noise reduction."""
