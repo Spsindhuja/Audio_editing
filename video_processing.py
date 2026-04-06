@@ -23,7 +23,7 @@ def process_audio(audio_path, duration, volume=1.0, fade_in=2, fade_out=2, noise
 
 def generate_ai_subtitles(audio_path):
     """Generate subtitles using OpenAI Whisper."""
-    openai.api_key = OPENAI_API_KEY
+    
     with open(audio_path, "rb") as f:
         transcript = openai.Audio.transcribe("whisper-1", f)
     return [(line["text"], line["start"], line["end"]) for line in transcript["segments"]]
